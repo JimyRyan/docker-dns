@@ -10,4 +10,4 @@ VOLUME ["/etc/bind", "/var/lib/bind"]
 
 EXPOSE 53/udp
 
-ENTRYPOINT ["/usr/sbin/named", "-c", "/etc/bind/named.conf"]
+ENTRYPOINT ["/usr/sbin/named", "-c", "/etc/bind/named.conf", "-g"]
