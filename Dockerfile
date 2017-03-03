@@ -8,6 +8,6 @@ RUN set -eux \
 
 VOLUME ["/etc/bind", "/var/lib/bind"]
 
-EXPOSE 53/udp
+EXPOSE 53 53/udp
 
 ENTRYPOINT ["/usr/sbin/named", "-c", "/etc/bind/named.conf", "-g"]
